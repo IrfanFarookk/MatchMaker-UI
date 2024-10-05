@@ -1,0 +1,56 @@
+.matches-section {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  .matching-profile-count {
+    margin-left: 25%;
+  }
+  
+  .matches-section h2 {
+    margin: 0;
+    padding-right: 10px;
+  }
+  
+  .dropdown-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .new-count-section {
+    border: 2px solid white;
+    border-radius: 22px;
+    max-width: 70px;
+    margin-top: 5px;
+    padding: 0px;
+    height: 30px;
+  }
+  
+
+  @media (max-width: 430px) {
+    .matches-section {
+        align-items: start;
+    }
+
+    .matches-section h2 {
+        padding-right: 0; /* Remove right padding on small screens */
+        text-align: center; /* Center text on mobile */
+    }
+
+    .dropdown-button {
+        margin-top: 10px; /* Add some space above the button on mobile */
+    }
+
+    .matching-profile-count {
+        margin-left: 10%;
+      }
+
+    .new-count-section {
+        max-width: 100px;
+    }
+}

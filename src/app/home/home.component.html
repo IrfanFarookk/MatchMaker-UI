@@ -1,0 +1,12 @@
+<div class="row matches-section">
+    <h2 class="col-6">My Matches</h2>
+    <button class="dropdown-button col-6">•••</button>
+    <div class="dropdown" *ngIf="dropdownOpen"></div>
+</div>
+
+<div class="row" style="margin-top: 15px;">
+    <h2 class="col-4 matching-profile-count">{{MatchingPofileCount}} Profiles matching with me</h2>
+    <div class="col-1 new-count-section"><p style="margin-top: 2px; margin-left: 10px;">{{newMatchCount}} new</p></div>
+</div>
+
+<app-profiles [someData]="dataToPass"></app-profiles>
