@@ -1,0 +1,28 @@
+[
+    {
+      "imgUrl": "assets/images/image1.jpg",
+      "name": "Sydney Sweeney",
+      "description": "25 Yrs, 5 ft 2 in, Tamil, Nair, MBBS, Doctor, Chennai, TamilNadu, India"
+    },
+    {
+      "imgUrl": "assets/images/image2.jpg",
+      "name": "Sabrina Carpenter",
+      "description": "25 Yrs, 5 ft 2 in, Tamil, Nair, MBBS, Doctor, Chennai, TamilNadu, India"
+    },
+    {
+      "imgUrl": "assets/images/image3.jpg",
+      "name": "Amber Heard",
+      "description": "25 Yrs, 5 ft 2 in, Tamil, Nair, MBBS, Doctor, Chennai, TamilNadu, India"
+    },
+    {
+      "imgUrl": "assets/images/image4.jpg",
+      "name": "Mrunal Thakur",
+      "description": "25 Yrs, 5 ft 2 in, Tamil, Nair, MBBS, Doctor, Chennai, TamilNadu, India"
+    },
+    {
+      "imgUrl": "assets/images/image5.jpg",
+      "name": "Jenna Ortega",
+      "description": "25 Yrs, 5 ft 2 in, Tamil, Nair, MBBS, Doctor, Chennai, TamilNadu, India"
+    }
+  ]
+  

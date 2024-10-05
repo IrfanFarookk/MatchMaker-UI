@@ -1,1 +1,11 @@
-<p>profiles works with {{someData}}</p>
+<div class="sliding-container">
+    <div class="section" *ngFor="let section of images; let i = index">
+        <img [src]="section.imgUrl" alt="Section Image" class="section-image">
+        <div class="content-class">
+            <p class="name">{{ section.name }}</p>
+            <p class="name">{{ section.description }}</p>
+            <button class="button-style" style="background-color: orange; margin-left: 4%;" (click)="yes()">Yes</button>
+            <button class="button-style" (click)="yes()">No</button>
+        </div>
+    </div>
+  </div>
