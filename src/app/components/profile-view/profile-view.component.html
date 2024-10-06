@@ -1,0 +1,30 @@
+<ion-app>
+    <ion-content class="ion-padding" fullscreen>
+      <swiper-container #slides [options]="{ allowTouchMove: true }">
+        <swiper-slide *ngFor="let profile of profileDetails; let i = index">
+          <div class="profile-container">
+            <ion-button class="back-button" (click)="goBack()"> ← {{profile.id}}</ion-button>
+            <img [src]="profile.imgUrl" alt="Section Image" class="center-image" />
+          </div>
+          <div class="content-container">
+            <span>
+              <p> {{profile.name}} </p>
+              <p style="border-bottom: 1.2px dashed grey;"> {{profile.description}} </p>
+            </span>
+            <span>
+              <ion-button class="shortlist-button" (click)="shortlist()">
+                <img src="../../../assets/star.png" class="star" />Shortlist
+              </ion-button>
+              <ion-button (click)="cross()"> Like her?
+                <img src="../../../assets/remove.png" class="star" />
+              </ion-button>
+              <ion-button (click)="selected()">
+                <img src="../../../assets/check.png" class="star" />
+              </ion-button>
+            </span>
+          </div>
+        </swiper-slide>
+      </swiper-container>
+    </ion-content>
+  </ion-app>
+  

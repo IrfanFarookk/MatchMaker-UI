@@ -1,7 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ImageService ,Image } from '../services/image.service';
+import { ImageService ,Image } from '../../services/image.service';
 import { HttpClientModule } from '@angular/common/http';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-profiles',
   standalone: true,
@@ -11,7 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 })
 export class ProfilesComponent  implements OnInit {
   images: Image[] = [];
-  constructor(private imageService: ImageService) { }
+  constructor(private imageService: ImageService, private router: Router) { }
 
   ngOnInit(): void {
     this.imageService.getImages().subscribe(data => {
@@ -21,7 +23,12 @@ export class ProfilesComponent  implements OnInit {
 
   @Input() someData: any; 
 
-  yes() {
+  yes(section: any) {
+    this.router.navigate(['/profile'], {
+      state: {
+        images: this.images,
+        clickedImage: section
+      }});
   }
 
   no() {
